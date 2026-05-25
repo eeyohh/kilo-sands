@@ -39,7 +39,6 @@
             padding: 0 24px;
         }
 
-        /* Color Palette - Industrial & Trustworthy */
         :root {
             --primary: #d97706;
             --primary-dark: #b45309;
@@ -50,7 +49,6 @@
             --shadow: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02);
         }
 
-        /* Header */
         header {
             background: white;
             box-shadow: var(--shadow);
@@ -116,9 +114,9 @@
             transform: scale(1.02);
         }
 
-        /* Hero Section with Quarry Background */
+        /* Hero Section - REPLACE URL WITH YOUR QUARRY/LOADER PHOTO */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://placehold.co/1920x800/1e293b/d97706?text=Quarry+Scene+-+Front+End+Loader+Loading+Sand');
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('images/quarry-loader.jpg');
             background-size: cover;
             background-position: center 30%;
             padding: 100px 0;
@@ -138,7 +136,6 @@
             opacity: 0.95;
         }
 
-        /* Trust Badges - Updated (No "Own Fleet" claim) */
         .trust-badges {
             background: var(--secondary);
             color: white;
@@ -164,7 +161,6 @@
             color: var(--primary);
         }
 
-        /* Sections */
         section {
             padding: 70px 0;
             border-bottom: 1px solid #eef2f6;
@@ -216,21 +212,9 @@
         }
 
         .product-img {
-            height: 200px;
+            height: 220px;
             background-size: cover;
             background-position: center;
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-start;
-            padding: 10px;
-        }
-
-        .product-img span {
-            background: rgba(0,0,0,0.6);
-            color: white;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.7rem;
         }
 
         .product-card h3 {
@@ -251,7 +235,6 @@
             font-size: 1.2rem;
         }
 
-        /* Why Choose Us */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -278,7 +261,6 @@
             color: var(--secondary);
         }
 
-        /* Map Container */
         .map-container {
             border-radius: 20px;
             overflow: hidden;
@@ -292,7 +274,6 @@
             border: 0;
         }
 
-        /* Contact Form */
         .contact-flex {
             display: flex;
             flex-wrap: wrap;
@@ -380,7 +361,6 @@
             font-size: 1.2rem;
         }
 
-        /* WhatsApp Float */
         .whatsapp-float {
             position: fixed;
             bottom: 28px;
@@ -405,7 +385,6 @@
             background: #20b359;
         }
 
-        /* Cookie Banner */
         .cookie-banner {
             position: fixed;
             bottom: 0;
@@ -422,7 +401,6 @@
             gap: 16px;
         }
 
-        /* Footer */
         footer {
             background: var(--dark);
             color: #94a3b8;
@@ -481,7 +459,6 @@
             margin: 0 12px;
         }
 
-        /* Responsive */
         @media (max-width: 800px) {
             .hero h1 { font-size: 2rem; }
             .header-flex { flex-direction: column; text-align: center; }
@@ -493,13 +470,11 @@
 </head>
 <body>
 
-<!-- Cookie Consent Banner -->
 <div id="cookieBanner" class="cookie-banner">
     <span>🍪 Kilo Sand uses cookies to improve your experience. By using our site, you agree to our <a href="#" id="cookiePrivacyLink">Privacy Policy</a>.</span>
     <button onclick="acceptCookies()">Accept</button>
 </div>
 
-<!-- Floating WhatsApp Button (0836593996) -->
 <a href="https://wa.me/27836593996?text=Hello%20Kilo%20Sand%2C%20I%20need%20a%20quote%20for%20sand%20delivery." class="whatsapp-float" target="_blank">
     <i class="fab fa-whatsapp"></i>
 </a>
@@ -520,7 +495,6 @@
     </div>
 </header>
 
-<!-- Trust Badges (Updated - No false claims) -->
 <div class="trust-badges">
     <div class="container trust-flex">
         <div class="trust-item"><i class="fas fa-handshake"></i> Reliable Delivery Partners</div>
@@ -530,7 +504,6 @@
 </div>
 
 <main>
-    <!-- Hero Section with Quarry Background -->
     <section id="home" class="hero">
         <div class="container">
             <h1>Premium Sand & Aggregates<br>Delivered to Your Site</h1>
@@ -540,56 +513,56 @@
         </div>
     </section>
 
-    <!-- Products Section with Images -->
+    <!-- PRODUCTS SECTION - REPLACE EACH "images/xxx.jpg" WITH YOUR ACTUAL PHOTO FILE NAMES -->
     <section id="products">
         <div class="container">
             <h2 class="section-title">Our Products</h2>
             <p class="section-sub">Quality materials for construction, landscaping, and civil works.</p>
             <div class="products-grid">
+                
+                <!-- Product 1: River Sand -->
                 <div class="product-card">
-                    <div class="product-img" style="background-image: url('https://placehold.co/600x400/1e293b/d97706?text=River+Sand'); background-size: cover; background-position: center;">
-                        <span>📸 Add photo</span>
-                    </div>
+                    <div class="product-img" style="background-image: url('images/river-sand.jpg');"></div>
                     <h3>River Sand</h3>
                     <p>Ideal for concrete mix, screed, bedding soil, and horse arenas. Washed and screened for quality.</p>
                     <div class="product-price">From R249/m³</div>
                 </div>
+                
+                <!-- Product 2: Crusher Sand -->
                 <div class="product-card">
-                    <div class="product-img" style="background-image: url('https://placehold.co/600x400/1e293b/d97706?text=Crusher+Sand'); background-size: cover; background-position: center;">
-                        <span>📸 Add photo</span>
-                    </div>
+                    <div class="product-img" style="background-image: url('images/crusher-sand.jpg');"></div>
                     <h3>Crusher Sand</h3>
                     <p>Manufactured from blue granite. Perfect for concrete mix and manufacturing of stock bricks.</p>
                     <div class="product-price">From R286/m³</div>
                 </div>
+                
+                <!-- Product 3: Building Sand -->
                 <div class="product-card">
-                    <div class="product-img" style="background-image: url('https://placehold.co/600x400/1e293b/d97706?text=Building+Sand'); background-size: cover; background-position: center;">
-                        <span>📸 Add photo</span>
-                    </div>
+                    <div class="product-img" style="background-image: url('images/building-sand.jpg');"></div>
                     <h3>Building Sand</h3>
                     <p>General purpose sand for bricklaying, plastering, and foundations. Consistent quality.</p>
                     <div class="product-price">Contact for pricing</div>
                 </div>
+                
+                <!-- Product 4: G1/G2/G5/G6 Basecourse -->
                 <div class="product-card">
-                    <div class="product-img" style="background-image: url('https://placehold.co/600x400/1e293b/d97706?text=G1+G2+G5+G6'); background-size: cover; background-position: center;">
-                        <span>📸 Add photo</span>
-                    </div>
+                    <div class="product-img" style="background-image: url('images/basecourse-g1-g5.jpg');"></div>
                     <h3>G1 / G2 / G5 / G6</h3>
                     <p>Sub-base and base course materials for roads and pavements. Different specifications available.</p>
                     <div class="product-price">Contact for pricing</div>
                 </div>
+                
+                <!-- Product 5: Dump Rock / Gabion Rock -->
                 <div class="product-card">
-                    <div class="product-img" style="background-image: url('https://placehold.co/600x400/1e293b/d97706?text=Dump+Rock'); background-size: cover; background-position: center;">
-                        <span>📸 Add photo</span>
-                    </div>
+                    <div class="product-img" style="background-image: url('images/dump-rock.jpg');"></div>
                     <h3>Dump Rock / Gabion Rock</h3>
                     <p>80-200mm crushed rock for gabion baskets, landscaping, and drainage.</p>
                     <div class="product-price">From R299/m³</div>
                 </div>
+                
+                <!-- Product 6: 13mm & 19mm Stone -->
                 <div class="product-card">
-                    <div class="product-img" style="background-image: url('https://placehold.co/600x400/1e293b/d97706?text=13mm+19mm+Stone'); background-size: cover; background-position: center;">
-                        <span>📸 Add photo</span>
-                    </div>
+                    <div class="product-img" style="background-image: url('images/crushed-stone-13mm-19mm.jpg');"></div>
                     <h3>13mm & 19mm Stone</h3>
                     <p>Crushed stone for concrete, drainage, and landscaping.</p>
                     <div class="product-price">Contact for pricing</div>
@@ -598,7 +571,6 @@
         </div>
     </section>
 
-    <!-- About & Why Choose Us -->
     <section id="about" style="background: var(--light-bg);">
         <div class="container">
             <h2 class="section-title">Why Kilo Sand</h2>
@@ -625,7 +597,6 @@
                 </div>
             </div>
 
-            <!-- Google Map with Kilo Sand Location Pinned -->
             <h3 style="margin: 40px 0 20px; color: var(--secondary);">Find Us</h3>
             <div class="map-container">
                 <iframe 
@@ -641,7 +612,6 @@
         </div>
     </section>
 
-    <!-- Contact & Quote Form -->
     <section id="contact">
         <div class="container">
             <h2 class="section-title">Get a Free Quote</h2>
@@ -674,7 +644,6 @@
                             <textarea rows="3" name="message" placeholder="Delivery address, quantity required, and any special requirements..."></textarea>
                         </div>
                         
-                        <!-- POPIA Consent -->
                         <div class="checkbox-group">
                             <input type="checkbox" id="popiaConsent" required>
                             <label for="popiaConsent">I consent to Kilo Sand collecting and storing my personal information to provide a quote, as outlined in the <a href="#" id="popiaLink">Privacy Policy</a> (POPIA compliant).</label>
@@ -740,23 +709,14 @@
 </footer>
 
 <script>
-    // ============================================
-    // CONTACT DETAILS - UPDATED
-    // ============================================
     const COMPANY_PHONE = "0836593996";
-    const WHATSAPP_NUMBER = "27836593996"; // Format: 27 + number without 0
+    const WHATSAPP_NUMBER = "27836593996";
     const COMPANY_EMAIL = "info@kilosand.co.za";
     
-    // ============================================
-    // SSL ENFORCEMENT
-    // ============================================
     if (location.protocol !== 'https:' && location.hostname !== 'localhost' && !location.hostname.includes('127.0.0.1')) {
         location.href = 'https://' + location.hostname + location.pathname + location.search;
     }
     
-    // ============================================
-    // COOKIE CONSENT
-    // ============================================
     function setCookie(name, value, days) {
         let expires = "";
         if (days) {
@@ -783,16 +743,12 @@
         document.getElementById("cookieBanner").style.display = "none";
     };
     
-    // Show cookie banner if not accepted
     window.onload = function() {
         if (!getCookie("cookies_accepted")) {
             document.getElementById("cookieBanner").style.display = "flex";
         }
     };
     
-    // ============================================
-    // POPIA CONSENT & FORM HANDLING
-    // ============================================
     const form = document.getElementById('contactForm');
     if (form) {
         form.addEventListener('submit', function(e) {
@@ -803,17 +759,14 @@
                 return false;
             }
             
-            // Get form data
             const name = document.querySelector('[name="name"]').value;
             const email = document.querySelector('[name="email"]').value;
             const phone = document.querySelector('[name="phone"]').value;
             const product = document.querySelector('[name="product"]').value;
             const message = document.querySelector('[name="message"]').value;
             
-            // Prepare WhatsApp message for client (you) - sends to YOUR number
             const leadMessage = `🔨 *NEW LEAD - Kilo Sand Website*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Phone:* ${phone}%0A*Product:* ${product}%0A*Message:* ${message}%0A%0AReply to this lead via WhatsApp or call.`;
             
-            // Send to the business owner's WhatsApp (0836593996)
             const ownerWhatsApp = "27836593996";
             const waLink = `https://wa.me/${ownerWhatsApp}?text=${leadMessage}`;
             window.open(waLink, '_blank');
@@ -823,9 +776,6 @@
         });
     }
     
-    // ============================================
-    // POPIA & TERMS PAGES
-    // ============================================
     function showPrivacyPolicy() {
         alert(`📜 PRIVACY POLICY (POPIA Compliant)
         
@@ -835,9 +785,7 @@ Information Officer: [Owner Name]
 Email: ${COMPANY_EMAIL}
 Phone: ${COMPANY_PHONE}
 
-You have the right to access, correct, or delete your personal data. Contact us for any requests.
-
-Full policy available on request.`);
+You have the right to access, correct, or delete your personal data. Contact us for any requests.`);
     }
     
     function showTerms() {
@@ -847,18 +795,14 @@ Full policy available on request.`);
 2. Delivery times are estimates based on partner availability.
 3. Payment terms: 30% deposit required for first-time clients.
 4. Claims: Please inspect materials upon delivery.
-5. Disputes: Refer to Good-faith negotiation then arbitration.
-
-Full T&Cs available on request.`);
+5. Disputes: Refer to Good-faith negotiation then arbitration.`);
     }
     
-    // Attach legal link events
     document.getElementById('cookiePrivacyLink')?.addEventListener('click', (e) => { e.preventDefault(); showPrivacyPolicy(); });
     document.getElementById('popiaLink')?.addEventListener('click', (e) => { e.preventDefault(); showPrivacyPolicy(); });
     document.getElementById('footerPrivacyLink')?.addEventListener('click', (e) => { e.preventDefault(); showPrivacyPolicy(); });
     document.getElementById('footerTermsLink')?.addEventListener('click', (e) => { e.preventDefault(); showTerms(); });
     
-    // Smooth scroll for navigation
     document.querySelectorAll('.nav-links a, .btn, .header-phone').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
